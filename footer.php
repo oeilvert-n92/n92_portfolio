@@ -1,5 +1,5 @@
 <footer class="font-en">
-    <small>&copy; 2023 NAO ENDO</small>
+    <small>&copy; 2026 NAO MURAKOSHI</small>
 </footer>
 
 <script src="<?php echo get_template_directory_uri(); ?>/assets/js/mode.js"></script>

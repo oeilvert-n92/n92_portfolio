@@ -6,9 +6,9 @@
     <?php endif; ?>
         
     <?php if ( !is_home() && !is_front_page() ) : ?>
-        <p class="top__sub-title font-en">NAO ENDO’s Portfolio</p>
+        <p class="top__sub-title font-en">NAO MURAKOSHI’s Portfolio</p>
     <?php else: ?>
-        <h1 class="top__sub-title font-en">NAO ENDO’s Portfolio</h1>
+        <h1 class="top__sub-title font-en">NAO MURAKOSHI’s Portfolio</h1>
     <?php endif; ?>
 
     <div class="top__job_box">
