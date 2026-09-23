@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>n92 | NAO ENDO’s Portfolio</title>
+<title>n92 | NAO MURAKOSHI’s Portfolio</title>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/destyle.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
 
