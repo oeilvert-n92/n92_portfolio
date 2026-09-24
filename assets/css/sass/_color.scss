@@ -3,14 +3,14 @@
 	--main-text: #2B2B2B;
 	--main-bg: #FAFAFA;
 	--main-glow: #FFFFFF;
-	--article-bg: #DEDEDE;
+	--article-bg: #EDEDED;
 	--article-border: #959595;
 }
 /*ダークモードの場合は、次の変数が適用される*/
 [data-mode="dark"] {
     --main-text: #FFFFFF;
-    --main-bg: #2B2B2B;
+    --main-bg: #212121;
 	--main-glow: #3D3D3D;
-    --article-bg: #575757;
+    --article-bg: #424242;
 	--article-border: #959595;
 }
