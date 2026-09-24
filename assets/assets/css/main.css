@@ -491,7 +491,7 @@ footer {
 }
 @media (max-width: 480px) {
   .right-container .detail__box.about .detail__text-area article.strengths-block ol li figure {
-    top: -6vw;
+    top: -8vw;
     width: 40vw;
     height: 40vw;
   }

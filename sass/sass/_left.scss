@@ -1,0 +1,131 @@
+
+@use "variables" as v;
+
+.left-container {
+    position: relative;
+}
+
+.top__sidebar-box {
+    position: fixed;
+    width: 22%;
+    @include v.sp {
+        position: relative;
+        width: 100%;
+    }
+    .top__main-title {
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 1;
+        @include v.sp {
+            font-size: 48px;
+        }
+    }
+    .top__sub-title {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        @include v.sp {
+            margin-top: 0;
+            font-size: 20px;
+        }
+    }
+    .top__job_box {
+        @include v.sp {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+    }
+    .top__job {
+        margin-top: 10px;
+    }
+    .top__category-title {
+        margin-top: 40px;
+        font-weight: bold;
+        position: relative;
+    }
+    ul.top__skill-title {
+        display: flex;
+        flex-wrap: wrap;
+        @include v.sp {
+            margin-bottom: 40px;
+        }
+        li {
+            margin: 10px 20px 0 0;
+            font-size: 12px;
+            @include v.sp {
+                font-size: 10px;
+            }
+            a {
+                text-decoration: underline;
+                &::before {
+                    content: '# ';
+                }
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    a.top__more-link {
+        display: block;
+        width: 120px;
+        padding: 8px 0;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid var(--main-text);
+    }
+    .top__theme-box {
+        @include v.sp {
+            position: absolute;
+            top: 0;
+            right: 0;
+            transform: scale(.8);
+            transform-origin: right;
+            .top__category-title {
+                margin-top: 0;
+            }
+        }
+    }
+    .top__theme-area {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        svg {
+            display: block;
+        }
+    }
+    .top__button-switch {
+        position: relative;
+        margin: 0 10px;
+        width: 48px;
+        height: 24px;
+        border-radius: 12px;
+        background-color: #b1b1b1;
+        .top__button-switch__input {
+            opacity: 0;
+            &:checked + label.top__button-switch__label::before {
+                left: 26px;
+            }
+        }
+        label.top__button-switch__label {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            &::before {
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 20px;
+                height: 20px;
+                border-radius: 12px;
+                display: block;
+                content: '';
+                background-color: #fff;
+                transition: .25s;
+            }
+        }
+    }
+}
