@@ -7,21 +7,6 @@ html {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 16px;
     background-color: var(--main-bg);
-    animation: 45s glow_effect infinite;
-}
-@keyframes glow_effect {
-    25% {
-        background-color: var(--main-glow);
-    }
-    50% {
-        background-color: var(--main-bg);
-    }
-    75% {
-        background-color: var(--article-bg);
-    }
-    100% {
-        background-color: var(--main-bg);
-    }
 }
 body {
     position: relative;
