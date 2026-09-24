@@ -20,6 +20,6 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: ${{ secrets.SERVER_PORT }}
-          source: "*"
+          source: "*,!.git"
           target: "/home/ss472893/ss472893.stars.ne.jp/public_html/wp-content/themes/n92/"
           overwrite: true
