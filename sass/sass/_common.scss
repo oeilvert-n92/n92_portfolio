@@ -1,0 +1,64 @@
+
+@use "variables" as v;
+
+html {
+    color: var(--main-text);
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    background-color: var(--main-bg);
+    animation: 45s glow_effect infinite;
+}
+@keyframes glow_effect {
+    25% {
+        background-color: var(--main-glow);
+    }
+    50% {
+        background-color: var(--main-bg);
+    }
+    75% {
+        background-color: var(--article-bg);
+    }
+    100% {
+        background-color: var(--main-bg);
+    }
+}
+body {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    &>div {
+        transform: scale(0);
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+main {
+    position: relative;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 80px;
+    @include v.sp {
+        display: block;
+        padding: 30px;
+    }
+}
+a {
+    transition: .25s;
+    &:hover {
+        color: var(--main-bg);
+        background-color: var(--main-text);
+    }
+}
+footer {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 14px;
+}
+.font-en {
+    font-family: 'Saira Condensed', sans-serif;
+}

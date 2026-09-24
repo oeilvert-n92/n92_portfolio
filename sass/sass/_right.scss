@@ -1,0 +1,145 @@
+
+@use "variables" as v;
+
+.right-container {
+    width: 70%;
+    @include v.sp {
+        width: 100%;
+    }
+    .top__list-box {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 60px;
+            li {
+                width: calc(50% - 30px);
+                margin-bottom: 60px;
+                @include v.sp {
+                    width: 100%;
+                }
+                &:nth-child(odd) {
+                    margin-top: -60px;
+                    @include v.sp {
+                        margin-top: 0;
+                    }
+                }
+                figure {
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 20px 0;
+                    transition: .75s;
+                    box-shadow: 0 0 0 1px var(--main-text);
+                    img {
+                        transition: .3s;
+                    }
+                    &::before, &::after {
+                        position:absolute;
+                        display:block;
+                        box-sizing:border-box;
+                        width:0;
+                        height:0;
+                        border-radius: 20px 0;
+                        content:"";
+                        opacity:0;
+                        transition:width 0.3s, height 0.3s, opacity 0.3s;
+                    }
+                    &::before {
+                        top:0;
+                        left:0;
+                        border-top:2px solid var(--main-text);
+                        border-left:2px solid var(--main-text);
+                    }
+                    &::after {
+                        right:0;
+                        bottom:0;
+                        border-right:2px solid var(--main-text);
+                        border-bottom:2px solid var(--main-text);
+                    }
+                    &:hover {
+                        &::before, &::after {
+                            width:100%;
+                            height:100%;
+                            opacity:1;
+                        }
+                        img {
+                            position: relative;
+                            z-index: -1;
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 12px;
+                }
+                &:hover {
+                    a {
+                        color: var(--main-text);
+                    }
+                }
+            }
+        }
+    }
+    .detail__box {
+        .detail__img-area {
+            margin-bottom: 40px;
+            h1 {
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+        }
+        .detail__text-area {
+            figure.wp-block-image {
+                margin-bottom: 20px;
+                img {
+                    border: 1px solid var(--article-border);
+                }
+            }
+            .wp-block-group__inner-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            ul.detail__category-list {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 30px 0 60px;
+                li {
+                    margin-right: 20px;
+                    a {
+                        text-decoration: underline;
+                        &::before {
+                            content: '# ';
+                        }
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+            dl.detail__field-list {
+                display: flex;
+                flex-wrap: wrap;
+                dt {
+                    width: 100px;
+                    margin-bottom: 20px;
+                    font-size: 22px;
+                    font-weight: bold;
+                }
+                dd {
+                    width: calc(100% - 100px);
+                    margin: 3px 0 20px;
+                    a {
+                        text-decoration: underline;
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
