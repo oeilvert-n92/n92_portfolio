@@ -12,10 +12,10 @@
     <?php endif; ?>
 
     <div class="top__job_box">
-        <p class="top__job font-en">
-            Web / UI  Designer<br>
+        <?php /* <p class="top__job font-en">
+            Designer<br>
             Markup Engineer
-        </p>
+        </p> */ ?>
         <a class="top__more-link font-en" href="/about/">Learn More</a>
     </div>
 
