@@ -19,17 +19,15 @@
             article {
                 p {
                     line-height: 2;
-                    margin-bottom: 20px;
+                    margin-bottom: 1em;
                     &:last-of-type {
                         margin-bottom: 0;
                     }
                 }
                 &.first-block {
-                    padding: 40px;
-                    font-size: 110%;
-                    border: 1px solid var(--main-text);
-                    border-radius: 40px 0;
-                    background-color: var(--article-bg);
+                    width: 33vw;
+                    margin-bottom: -160px;
+                    font-size: 105%;
                 }
                 &.profile-block {
                     position: relative;
@@ -69,7 +67,7 @@
                         padding: 40px;
                         margin-left: auto;
                         font-size: 14px;
-                        border: 2px solid var(--main-text);
+                        border: 1px solid var(--main-text);
                         border-radius: 40px 0;
                         background-color: var(--article-bg);
                         @include v.sp {
@@ -90,16 +88,17 @@
                             position: relative;
                             width: 48%;
                             padding: 40px;
-                            margin-bottom: 100px;
-                            border: 2px solid var(--main-text);
+                            margin-bottom: 60px;
+                            border: 1px solid var(--main-text);
                             border-radius: 40px 0;
+                                background-color: var(--article-bg);
                             @include v.sp {
                                 width: 100%;
                                 padding: 25px;
-                                margin-bottom: 60px;
+                                margin-bottom: 30px;
                             }
                             &:nth-of-type(2n) {
-                                top: 200px;
+                                top: 100px;
                                 @include v.sp {
                                     top: 0;
                                 }
@@ -108,17 +107,28 @@
                                 position: absolute;
                                 top: -2vw;
                                 right: 20px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 width: 12vw;
                                 max-width: 180px;
                                 height: 12vw;
                                 max-height: 180px;
                                 border-radius: 50%;
                                 overflow: hidden;
-                                border: 2px solid var(--main-text);
+                                border: 1px solid var(--main-text);
+                                background-color: var(--main-bg);
                                 @include v.sp {
                                     top: -6vw;
                                     width: 40vw;
                                     height: 40vw;
+                                }
+                                img {
+                                    display: block;
+                                    width: 60%;
+                                    height: auto;
+                                    object-fit: cover;
+                                    object-position: center;
                                 }
                             }
                             h3 {
@@ -139,6 +149,9 @@
                     }
                 }
                 &.skill_set-block {
+                    h2 {
+                        margin-top: 100px;
+                    }
                     ul {
                         display: flex;
                         flex-wrap: wrap;
