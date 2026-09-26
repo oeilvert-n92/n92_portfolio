@@ -42,7 +42,7 @@ get_header();
                             nameTarget.replaceWith(strong);
                         });
                     </script>
-                    <p>デザイン（Web・UI/UX・DTPなど）を中心に、Web開発やディレクションの仕事をしています。</p>
+                    <p>デザインを軸に、Web開発・マーケティング・ディレクションから、DTPや展示会などの施策まで、幅広い業務に携わっています。</p>
                 </article>
 
                 <article class="profile-block">
@@ -162,20 +162,52 @@ get_header();
 
                 <article class="skill_set-block">
 
-                    <h2>Skill Set</h2>
+                    <h2>Design Skills</h2>
+
+                    <ul>
+                        <li>Webデザイン</li>
+                        <li>UI / UXデザイン</li>
+                        <li>DTP / 印刷物デザイン</li>
+                        <li>ロゴ</li>
+                        <li>バナー / LP</li>
+                        <li>展示会・イベントグラフィック</li>
+                        <li>デジタルサイネージ</li>
+                        <li>写真・動画撮影</li>
+                    </ul>
+
+                    <h2>Front-end / Development Skills</h2>
+
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS / Sass</li>
+                        <li>JavaScript</li>
+                        <li>Git / GitHub</li>
+                        <li>WordPress</li>
+                        <li>PHP</li>
+                        <li>CakePHP / Laravel</li>
+                    </ul>
+
+                    <h2>Planning / Direction Skills</h2>
+
+                    <ul>
+                        <li>Webサイト・LP企画</li>
+                        <li>コンテンツ改善</li>
+                        <li>アクセス解析</li>
+                        <li>CV改善</li>
+                        <li>マーケティング施策</li>
+                        <li>制作ディレクション</li>
+                        <li>スケジュール管理</li>
+                        <li>関係者調整</li>
+                    </ul>
+
+                    <h2>Tools</h2>
 
                     <ul>
                         <li>Adobe Photoshop</li>
                         <li>Adobe Illustrator</li>
                         <li>Adobe XD</li>
                         <li>Figma</li>
-                        <li>HTML</li>
-                        <li>CSS / Sass</li>
-                        <li>JavaScript</li>
-                        <li>CMSカスタマイズ</li>
-                        <li>PHP(CakePHP, Laravel)</li>
                         <li>GitHub / Sourcetree</li>
-                        <li>写真・動画撮影</li>
                     </ul>
 
                 </article>
