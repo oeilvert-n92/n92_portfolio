@@ -4,7 +4,7 @@
             <?php get_sidebar(); ?>
         </section>
         <section class="right-container">
-            <div class="detail__box about">
+            <div class="detail__box">
                 <article class="detail__text-area">
                     <h1><?php the_title(); ?></h1>
                     <?php the_content();?>

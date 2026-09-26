@@ -20,6 +20,10 @@
     });
   
     function changeMode(mode, storage) {
+      document.querySelectorAll('[data-light-src][data-dark-src]').forEach((image) => {
+        image.src = mode === 'dark' ? image.dataset.darkSrc : image.dataset.lightSrc;
+      });
+
       if (mode === 'dark') {
         htmlElement.dataset.mode = mode;
         switchButton.checked = true;
